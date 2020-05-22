@@ -1,6 +1,10 @@
 <?php 
 
+    // define("BASE_URL", 'http://localhost:8888/tourmanager-app'); 
+    // define("API_URL", 'http://localhost:8888/gdates/public/api'); 
+
     define("BASE_URL", 'http://localhost:8888/tourmanager-app'); 
+    define("API_URL", 'http://gdates.rwdstaging.co.uk/api'); 
 
 ?>
 

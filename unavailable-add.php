@@ -2,7 +2,7 @@
 	
 	<!-- ajax hidden forms -->
 
-	<div class="ajax-form ajax-form--hidden" id="getGigsForm" method="get" action="http://localhost:8888/gdates/public/api/gigs"></div>
+	<div class="ajax-form ajax-form--hidden" id="getGigsForm" method="get" action="<?php echo API_URL; ?>/gigs"></div>
 
     <div class="container">
 

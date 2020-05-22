@@ -5,6 +5,7 @@ var Gig = (function(){
 			$.ajax({
 				url: config('API_URL') + 'gigs',
 				method: 'GET',
+				dataType: 'json',
 				headers: {
 					"Authorization": auth.getToken()
 				},
@@ -21,6 +22,7 @@ var Gig = (function(){
 			$.ajax({
 				url: config('API_URL') + 'gigs/' + id,
 				method: 'DELETE',
+				dataType: 'json',
 				headers: {
 					"Authorization": auth.getToken()
 				},

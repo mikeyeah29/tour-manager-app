@@ -13,8 +13,30 @@ body.page-loading {
 	position: relative;
 	&:before {
 		content: '';
-		background: $body_bg;
+		background-color: $body_bg;
+		background-image: url('../img/loading.gif');
+		background-repeat: no-repeat;
+		background-size: 40px;
+    	background-position: center;
 		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+	}
+}
+
+.is-loading {
+	position: relative;
+	&:before {
+		content: '';
+		background-color: opacify($body_bg, 0.8);
+		background-image: url('../img/loading.gif');
+		background-repeat: no-repeat;
+		background-size: 40px;
+    	background-position: center;
+		position: absolute;
 		top: 0px;
 		left: 0px;
 		width: 100%;
@@ -65,7 +87,21 @@ body.page-loading {
 
 .ajax-form {
 	&--loading {
-		background: blue;
+		position: relative;
+		&:before {
+			content: '';
+			background-color: opacify($body_bg, 0.8);
+			background-image: url('../img/loading.gif');
+			background-repeat: no-repeat;
+			background-size: 40px;
+	    	background-position: center;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+		}
 	}
 	&--hidden {
 		display: none;
@@ -98,7 +134,7 @@ body.page-loading {
 
 .tm-modal {
 	position: fixed;
-	background: #000;
+    background: rgba(0, 0, 0, 0.88);
 	top: 0px;
 	left: 0px;
 	display: flex;
@@ -110,6 +146,7 @@ body.page-loading {
 		background: #fff;
 		border-radius: 3px;
 		align-self: center;
+		padding: 10px;
 	}
 }
 

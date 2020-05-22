@@ -1,11 +1,19 @@
 (function(){
 	app.loadPage('loggedOut', 'gigs.php', function(){
 
+		var messageBox = new MessageBox($('#message-box-container'));
+
 		var loginForm = new AjaxForm({
 			id: 'loginForm',
 			callback: function(error, data){
-				console.log(data);
-				auth.login(data.access_token, 'gigs.php');
+				console.log(error, data);
+
+				if(error){
+					messageBox.show('error', error.getMessages());
+				}else{
+					auth.login(data.access_token, 'gigs.php');
+				}
+
 			}
 		});
 
