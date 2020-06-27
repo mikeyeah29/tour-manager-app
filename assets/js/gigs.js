@@ -6,7 +6,7 @@
 		gigs: []
 	};
 
-	app.loadPage('loggedIn', '', function(){
+	app.loadPage('loggedIn', '/', function(){
 
 		// init components
 		var headings = [

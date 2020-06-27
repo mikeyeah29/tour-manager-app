@@ -3,8 +3,8 @@
     // define("BASE_URL", 'http://localhost:8888/tourmanager-app'); 
     // define("API_URL", 'http://localhost:8888/gdates/public/api'); 
 
-    define("BASE_URL", 'http://localhost:8888/tourmanager-app'); 
-    define("API_URL", 'http://gdates.rwdstaging.co.uk/api'); 
+    define("BASE_URL", 'http://localhost:8888/greenroom-app'); 
+    define("API_URL", 'https://api.greenroomapp.co/api'); 
 
 ?>
 
@@ -23,30 +23,28 @@
 </head>
 <body class="page-loading">
 
-    <header>
-        <div class="container d-flex justify-content-between">
-            <div class="logo">TourManager</div>
-                
-            <div class="navbar-toggler hidden-sm-up">
-                &#9776;
-            </div>
-            <div class="main-nav" id="main-nav">
-                <nav>
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="<?php echo BASE_URL; ?>/index.php">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL; ?>/unavailable.php">Unavailable Dates</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo BASE_URL; ?>/gigs.php">Gigs</a>
-                        </li>
-                        <li class="nav-item">
-                            <span class="nav-link btn-loutout">Logout</span>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <div class="overlay">
+        <div class="icon-cross" id="closeMenu">x</div>
+    </div>
+
+    <div class="main-nav" id="main-nav">
+        <!-- <nav>
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link active" href="<?php// echo BASE_URL; ?>/index.php">Login</a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="<?php// echo BASE_URL; ?>/signup.php">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php //echo BASE_URL; ?>/unavailable.php">Unavailable Dates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php// echo BASE_URL; ?>/gigs.php">Gigs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php// echo BASE_URL; ?>/logout.php">Logout</a>
+                </li>
+            </ul>
+        </nav> -->
+    </div>

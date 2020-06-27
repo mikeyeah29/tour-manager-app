@@ -1,24 +1,21 @@
 (function(){
-
-	app.loadPage('loggedIn', '/', function(){
+	app.loadPage('loggedOut', '/welcome_user.php', function(){
 
 		var messageBox = new MessageBox($('#message-box-container'));
 
-		var addGigForm = new AjaxForm({
-			id: 'addGigForm',
-			token: auth.getToken(),
+		var loginForm = new AjaxForm({
+			id: 'loginForm',
 			callback: function(error, data){
-			
+				console.log(error, data);
+
 				if(error){
 					messageBox.show('error', error.getMessages());
 				}else{
-					messageBox.show('success', [data.message]);
-					router.redirect('gigs.php');
+					auth.login(data.access_token, '/gigs.php');
 				}
 
 			}
 		});
 
 	});
-
 })();

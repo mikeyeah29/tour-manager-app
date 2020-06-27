@@ -1,6 +1,6 @@
 (function(){
 
-	app.loadPage('loggedIn', '', function(){
+	app.loadPage('loggedIn', '/', function(){
 
 		var messageBox = new MessageBox($('#message-box-container'));
 

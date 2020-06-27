@@ -3,7 +3,7 @@ var Gig = (function(){
 	return {
 		all: function(callback){
 			$.ajax({
-				url: config('API_URL') + 'gigs',
+				url: config('API_URL') + '/gigs',
 				method: 'GET',
 				dataType: 'json',
 				headers: {
@@ -20,7 +20,7 @@ var Gig = (function(){
 		},
 		destroy: function(id, callback){
 			$.ajax({
-				url: config('API_URL') + 'gigs/' + id,
+				url: config('API_URL') + '/gigs/' + id,
 				method: 'DELETE',
 				dataType: 'json',
 				headers: {

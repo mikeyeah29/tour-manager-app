@@ -6,8 +6,8 @@ var config = (function(){
 	// };
 
 	var keys = {
-		BASE_URL: 'http://localhost:8888/tourmanager-app/',
-		API_URL: 'http://gdates.rwdstaging.co.uk/api/'
+		BASE_URL: 'http://localhost:8888/greenroom-app',
+		API_URL: 'https://api.greenroomapp.co/api'
 	};
 
 	function config(key){

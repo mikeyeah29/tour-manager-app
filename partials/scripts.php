@@ -8,6 +8,7 @@
 <script type="text/javascript" src="assets/js/core/app.js"></script>
 
 <!-- global components -->
+<script type="text/javascript" src="assets/js/components/Menu.js"></script>
 <script type="text/javascript" src="assets/js/components/MessageBox.js"></script>
 
 <!-- other -->

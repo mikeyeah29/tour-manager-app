@@ -9,12 +9,8 @@
         <div class="container">
 
             <div class="d-flex justify-content-between">
-                <h1>Gigs</h1>
-                <a href="<?php echo BASE_URL; ?>/gigs-add.php" class="gr-btn gr-btn--cta">Add Gig</a>
-            </div>
-            
-            <div class="gigs">
-                
+                <h1>Welcome User</h1>
+
             </div>
 
         </div>
@@ -26,7 +22,7 @@
     
     <script type="text/javascript" src="assets/js/components/Table.js"></script>
     <script type="text/javascript" src="assets/js/components/ConfirmPopUp.js"></script>
-    <script type="text/javascript" src="assets/js/models/Gig.js"></script>
-    <script type="text/javascript" src="assets/js/gigs.js"></script>
+
+    <script type="text/javascript" src="assets/js/welcome.js"></script>
 
 <?php include('partials/footer.php') ?>

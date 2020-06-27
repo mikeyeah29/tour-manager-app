@@ -13,10 +13,10 @@ function ConfirmPopUp(container, message){
 
 ConfirmPopUp.prototype.btnEvents = function(first_argument) {
 	var self = this;
-	this.element.find('.tm-modal__yes').on('click', function(){
+	this.element.find('.gr-modal__yes').on('click', function(){
 		if(self.yes){ self.yes(); }
 	});
-	this.element.find('.tm-modal__no').on('click', function(){
+	this.element.find('.gr-modal__no').on('click', function(){
 		self.no();
 		this.yes = null;
 	});
@@ -34,12 +34,12 @@ ConfirmPopUp.prototype.close = function(yesFunc) {
 ConfirmPopUp.prototype.render = function() {
 	this.container.empty();
 	this.element = $(`
-		<div class="tm-modal">
-			<div class="tm-modal__inner">
+		<div class="gr-modal">
+			<div class="gr-modal__inner">
 				<p>${this.message}</p>
 				<div class="tm-modal__btns">
-					<div class="btn btn-primary tm-modal__yes">Yes</div>
-					<div class="btn btn-primary tm-modal__no">No</div>
+					<div class="gr-btn gr-modal--action gr-modal__yes">Yes</div>
+					<div class="gr-btn gr-modal--action gr-modal__no">No</div>
 				</div>
 			</div>
 		</div>
